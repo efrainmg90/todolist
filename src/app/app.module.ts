@@ -1,3 +1,4 @@
+import { ArchivedTodosPage } from './../pages/archived-todos/archived-todos';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     MyApp,
+    ArchivedTodosPage,
     HomePage
   ],
   imports: [
@@ -22,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,ArchivedTodosPage
   ],
   providers: [
     StatusBar,
